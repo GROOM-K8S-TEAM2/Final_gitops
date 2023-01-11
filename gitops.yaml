@@ -26,7 +26,7 @@ metadata:
   name: nginx-phpfpm
   labels:
     app: nginx-phpfpm
-  namespace: nginx
+  namespace: nginx_gitops
 spec:
   replicas: 1
   selector:
@@ -62,7 +62,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-phpfpm
-  namespace: nginx
+  namespace: nginx_gitops
   labels:
     app: nginx-phpfpm
 spec:
